@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Store</title>
+    <link rel="stylesheet" type="text/css" href="assests/css/website.css" />
+    <link rel="stylesheet" type="text/css" href="assests/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Include the header -->
+    <div id="header"></div>
+
+    <div>
+      <img
+        class="border_top_bottom"
+        style="width: 100%"
+        src="assests/pics/BANNER.png"
+      />
+    </div>
+
+    <div style="background-color: #5a5a5a; padding: 15px; margin-bottom: 30px">
+      <center>
+        <h2 class="heading_2" style="background-color: black; color: white; width: 40%; padding: 10px;">
+          "ABOUT NIKE"
+        </h2>
+        <p style="color: #a1a1a1; text-align: center;">
+          Our mission is what drives us to do everything possible to expand
+          human potential. We do that by creating groundbreaking sport
+          innovations, by making our products more sustainably, by building a
+          creative and diverse global team and by making a positive impact in communities where we
+          live and work. Based in Beaverton, Oregon, NIKE, Inc. includes the
+          Nike, Converse, and Jordan brands.
+        </p>
+      </center>
+    </div>
+
+    <div>
+      <center>
+        <h2 class="heading_2" style="color: WHITE; background-color: #505050; width: 40%; padding: 10px; text-align: center;">
+          <b><u>"PRODUCTS WE OFFER"</u></b>
+        </h2>
+      </center>
+
+      <div class="row">
+        <div class="column border_top_bottom">
+          <h2>FOR MEN</h2>
+          <img class="img" style="height: 250px; width: 250px" src="assests/pics/W2.jpg" />
+        </div>
+        <div class="column border_top_bottom">
+          <h2>FOR WOMEN</h2>
+          <img class="img" style="height: 250px; width: 250px" src="assests/pics/W3.jpg" />
+        </div>
+        <div class="column border_top_bottom">
+          <h2>FOR KIDS</h2>
+          <img class="img" style="height: 250px; width: 250px" src="assests/pics/W1.png" />
+        </div>
+      </div>
+    </div>
+    
+    <!-- Include the footer -->
+    <div id="footer"></div>
+    <script>
+      // Use JavaScript to load the header and footer
+      fetch('assests/header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        });
+    
+      fetch('assests/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
